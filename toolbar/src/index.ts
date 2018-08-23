@@ -59,7 +59,6 @@ class ButtonExtension implements DocumentRegistry.IWidgetExtension<NotebookPanel
 function activate(app: JupyterLab) {
   console.log('JupyterLab extension toolbar_launcher_button is activated!');
   app.docRegistry.addWidgetExtension('Notebook', new ButtonExtension());
-  app.commands.execute('launcher:create');
 };
 
 export default extension;
